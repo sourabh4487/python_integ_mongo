@@ -1,0 +1,16 @@
+# To create a DB
+cur.execute('create database iNeuron')
+
+# To create a table inside a DB
+cur.execute('create table iNeuron.fsds1(student_id INT, first_name varchar(50), last_name varchar(50), registration_date DATE, class varchar(20), course_name varchar(50))')
+
+# To enter data into a created table
+cur.execute("insert into iNeuron.fsds values (234,'Sourabh', 'Shrivastava', '2022-09-15','sql', 'fsds')")
+
+# To commit a code to the table, else it will not be saved
+mydb.commit()
+
+# To view the saved data. You can directly go to the table and check the data there
+cur.execute('select * from iNeuron.fsds')
+for i in cur:
+    print(i)
