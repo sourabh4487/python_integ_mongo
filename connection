@@ -1,0 +1,11 @@
+import mysql.connector
+
+mydb = mysql.connector.connect(
+    host = 'localhost',
+    user = 'xxx',
+    password = 'xxx'
+    host = ' xxx'
+)
+mydb.is_connected()
+
+cur = mydb.cursor()
