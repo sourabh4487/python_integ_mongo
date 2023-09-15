@@ -1,0 +1,3 @@
+cur.execute('create database <DBname>')
+  
+cur.execute('create table <DBname.tablename> ('student_id int, first_name varchar(50), last_name varchar(50), registration_date DATE, class varchar(20), course_name varchar(50)'))
